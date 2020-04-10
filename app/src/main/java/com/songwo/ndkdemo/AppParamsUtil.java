@@ -4,15 +4,11 @@ import android.util.Base64;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-/**
- * Created by luoxiangcheng on 2019/7/22 14:52
- * 拼接接口加密参数工具类
- */
 
 public class AppParamsUtil {
 
     private static final String TAB = "|"; // 原来采用制表符，但是IOS走不通，改为竖线
-    private static final String AES_KEY = "infoinfoinfoinfo"; // AES加密key
+    private static final String AES_KEY = "1234567890abcdef"; // AES加密key
     private static String mObatchid = ""; // 本次启动唯一ID
     private static String mAppverint = ""; // App版本号 ，如：010101
     private static String mCustomChannel;
